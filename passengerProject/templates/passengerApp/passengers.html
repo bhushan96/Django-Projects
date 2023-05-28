@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Passengers</title>
+    </head>
+    <body>
+    <h1 style ='text-align:center;'>Passenger Details</h1>
+
+    {% if passengers%}
+    <table style = 'border:2px brown groove;'>
+        <thead>
+            <th style = 'border:2px brown groove;'>First Name</th>
+            <th style = 'border:2px brown groove;'>Last Name</th>
+            <th style = 'border:2px brown groove;'>E-mail</th>
+            <th style = 'border:2px brown groove;'>Reward Points</th>
+        </thead>
+
+        {% for psg in passengers %}
+        <tr>
+            <td>{{psg.firstName}}</td>
+            <td>{{psg.lastName}}</td>
+            <td>{{psg.email}}</td>
+            <td>{{psg.rewardPoints}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    {% else %}
+    <p>No records found</p>
+
+    {% endif %}
+
+    </body>
+</html>
