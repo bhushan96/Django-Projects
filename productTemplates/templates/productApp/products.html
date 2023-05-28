@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <title> Electornics </title>
+        <link rel="stylesheet" href="{% static "css/product.css" %}">
+    </head>
+    <body>
+        <h1> {{ heading }} </h1>
+        <div class="main-div">
+            <div class="img">
+                <div class="images">
+                    <img src="{% static image1 %}"/>
+                </div>
+                <div class="product"> {{ product1 }} </div>
+            </div>
+            
+            <div class="img">
+                <div class="images">
+                    <img src="{% static image2 %}"/>
+                </div>
+                <div class="product"> {{ product2 }} </div>
+            </div>
+            
+            <div class="img">
+                <div class="images">
+                    <img src="{% static image3 %}"/>
+                </div>
+                <div class="product"> {{ product3 }} </div>
+            </div>
+        </div>
+    </body>
+</html>

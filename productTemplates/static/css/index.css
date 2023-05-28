@@ -1,0 +1,44 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 20px;
+}
+
+h1 {
+    color: royalblue;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+ul li {
+    list-style-type: none;
+    margin: 50px;
+}
+
+ul li a {
+    text-decoration: none;
+    padding: 40px;
+    color: white;
+}
+
+.electronics {
+    background-color: cadetblue;
+}
+
+.toys {
+    background-color: cornflowerblue;
+}
+
+.shoes {
+    background-color: yellowgreen;
+}

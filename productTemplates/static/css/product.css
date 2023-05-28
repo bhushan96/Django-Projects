@@ -1,0 +1,44 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 20px;
+}
+
+h1 {
+    color: royalblue;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.main-div {
+    display: flex;
+    justify-content: center;
+}
+
+.img {
+    width: 250px;
+    height: 250px;
+    border: 2px solid royalblue;
+    margin: 10px;
+    padding: 10px;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.product {
+    display: flex;
+    justify-content: center;
+}
