@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Form</title>
+    </head>
+    <body>
+        <h1 style='text-align:center;color:blue;'>Login Form</h1>
+        <form method='post'>
+            <table>
+            {{form.as_table}}
+            {% csrf_token %}
+            </table>
+            <br>
+            <input type='submit', value='Submit'>
+        </form>
+    
+    </body>
+</html>
