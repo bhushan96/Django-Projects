@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Movies List</title>
+    </head>
+    <body>
+        {% if movies %}
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Release Date</th>
+                <th>Rating</th>
+            </thead>
+
+            {% for mov in movies %}
+            <tr>
+                <td>{{mov.name}}</td>
+                <td>{{mov.releaseDate}}</td>
+                <td>{{mov.rating}}</td>
+            </tr>
+
+            {% endfor %}
+        </table>
+
+        {% else %}
+        <p>No movies found ! </p>
+
+        {% endif %}
+    </body>
+</html>
