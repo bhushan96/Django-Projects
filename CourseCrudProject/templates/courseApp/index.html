@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Course Details</title>
+    </head>
+    <body>
+       <h1 style = 'text-align:center;color:blue;'>Course Details</h1>
+       {% if courses %}
+       <table border=1>
+        <thead>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Instructor</th>
+            <th>Rating</th>
+        </thead>
+        {% for course in courses %}
+        <tr>
+            <td>{{course.id}}</td>
+            <td>{{course.name}}</td>
+            <td>{{course.description}}</td>
+            <td>{{course.instructor}}</td>
+            <td>{{course.rating}}</td>
+            <td><a href='/deleteCourse/{{course.id}}'>Delete</a></td>
+            <td><a href='/updateCourse/{{course.id}}'>Update</a></td>
+        </tr>
+        {% endfor %}
+       </table>
+       {% else %}
+       <p>No Courses Found!</p>
+       {% endif %}
+
+     <a href='/addCourse'>  <input type='button' value='Add Course'/></a>
+    </body>
+</html>
