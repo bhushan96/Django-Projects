@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Course Info</title>
+    </head>
+    <body>
+        {% if course_list %}
+        <table border = 1>
+            <thead>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Instructor</th>
+                <th>Rating</th>
+            </thead>
+
+            {% for course in course_list %}
+            <tr>
+                <td><a href='/{{course.id}}'>{{course.id}}</a></td>
+                <td>{{course.name}}</td>
+                <td>{{course.description}}</td>
+                <td>{{course.instructor}}</td>
+                <td>{{course.rating}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        {% else %}
+        <p>No Course Records Found! </p>
+        {% endif %}
+
+        <br>
+        <a href = '/create'><input type = 'button' value = 'Create Course Record'/>  </a>
+    </body>
+</html>

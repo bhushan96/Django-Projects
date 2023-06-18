@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Course Info</title>
+    </head>
+    <body>
+    <h2>Delete Course {{course.name}} ? </h2>
+    <form method='post'>
+        <input type = 'submit' value = 'confirm'>
+        <a href='/{{course.id}}'>Cancel</a>
+        {% csrf_token %}
+    </form>
+    </body>
+</html>
